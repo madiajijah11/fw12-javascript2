@@ -20,8 +20,9 @@ const name = [
 const searchName = (keyword, limit, name) => {
 	// filter name by keyword and limit, then return the result
 	const result = name.filter((item) => item.toLowerCase().includes(keyword));
+
 	// if the result is more than the limit, then return the result with the limit
 	return result.slice(0, limit);
 };
 
-console.log(searchName("an", 4, name));
+console.log(searchName("caro", 4, name));
