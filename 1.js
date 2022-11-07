@@ -2,7 +2,7 @@
 
 // 1.concat() method
 // metode ini digunakan untuk menggabungkan dua buah array menjadi satu array baru tanpa mengubah array yang lama
-// bisa digunakan pada string dan array
+// bisa digunakan pada array dan string
 const concat1 = ["a", "b", "c"];
 const concat2 = ["d", "e", "f"];
 const concat3 = concat1.concat(concat2);
@@ -14,7 +14,7 @@ console.log(concat6); // output: HelloWorld
 
 // 2.indexOf() method
 // metode ini digunakan untuk mengecek apakah suatu nilai ada di dalam array atau tidak dan mengembalikan nilai index dari nilai tersebut jika ada dan mengembalikan nilai -1 jika tidak ada
-// bisa digunakan pada string dan array
+// bisa digunakan pada array dan string
 const indexOf1 = [1, 2, 3];
 const indexOf2 = "jakarta";
 console.log(indexOf1.indexOf(2)); // 1
@@ -59,10 +59,13 @@ console.log(shift1); // ['b', 'c']
 
 // 8.slice() method
 // metode ini digunakan untuk mengambil elemen array dari index awal sampai index akhir dan mengembalikan elemen tersebut
-// bisa digunakan pada array
+// bisa digunakan pada array dan string
 const slice1 = ["a", "b", "c", "d", "e"];
 console.log(slice1.slice(1, 3)); // ['b', 'c']
 console.log(slice1.slice(2)); // ['c', 'd', 'e']
+const slice2 = "Hello World";
+console.log(slice2.slice(1, 3)); // el
+console.log(slice2.slice(2)); // llo World
 
 // 9.sort() method
 // metode ini digunakan untuk mengurutkan elemen array dan mengembalikan array yang sudah diurutkan
@@ -72,6 +75,27 @@ console.log(sort1.sort()); // ['a', 'b', 'c']
 
 // 10.toString() method
 // metode ini digunakan untuk mengubah array menjadi string dan mengembalikan string tersebut
-// bisa digunakan pada array
-const toString1 = ["a", "b", "c"];
-console.log(toString1.toString()); // a,b,c
+// bisa digunakan pada object, date, array, number, function, dan boolean
+// contoh object
+const toString1 = {
+	name: "John",
+	age: 30,
+};
+console.log(toString1.age.toString()); // [object Object]
+// contoh date
+const toString2 = new Date();
+console.log(toString2.toString()); // Mon Nov 07 2022 12:19:23 GMT+0800 (Singapore Standard Time)
+// contoh array
+const toString3 = ["a", "b", "c"];
+console.log(toString3.toString()); // a,b,c
+// contoh number
+const toString4 = 123;
+console.log(toString4.toString()); // 123
+// contoh function
+const toString5 = function () {
+	return "Hello World";
+};
+console.log(toString5.toString()); // function () { return "Hello World"; }
+// contoh boolean
+const toString6 = true;
+console.log(toString6.toString()); // true
