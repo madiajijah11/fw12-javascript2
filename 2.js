@@ -1,4 +1,4 @@
-const people = [
+const name = [
 	"Abigail",
 	"Alexandra",
 	"Alison",
@@ -17,11 +17,11 @@ const people = [
 	"Penelope",
 ];
 
-const searchName = (keyword, limit, people) => {
-	// filter people by keyword and limit, then return the result
-	const result = people.filter((item) => item.toLowerCase().includes(keyword));
+const searchName = (keyword, limit, name) => {
+	// filter name by keyword and limit, then return the result
+	const result = name.filter((item) => item.toLowerCase().includes(keyword));
 	// if the result is more than the limit, then return the result with the limit
 	return result.slice(0, limit);
 };
 
-console.log(searchName("an", 4, people));
+console.log(searchName("an", 4, name));
