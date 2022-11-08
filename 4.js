@@ -19,7 +19,7 @@ let newData = {
 	...data,
 	name: "Dian Rahmadani",
 	email: "madiajijah7@gmail.com",
-	hobby: ["Coding", "Gaming", "Reading"],
+	hobby: ["Coding", "Gaming", "Reading", "Traveling"],
 };
 
 console.log(newData);
