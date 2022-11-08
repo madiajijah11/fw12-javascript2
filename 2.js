@@ -24,7 +24,6 @@ const searchName = (keyword, limit, callback) => {
 	return callback(result, limit);
 };
 
-
 const callback = (result, limit) => {
 	return result.slice(0, limit);
 };

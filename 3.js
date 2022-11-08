@@ -1,3 +1,10 @@
+/* Buatlah fungsi yang memiliki parameter nilaiAwal dan nilaiAkhir, serta dataArray (array).
+
+Fungsi tersebut memiliki validasi nilaiAwal < nilaiAkhir dan jumlah data dalam array harus lebih dari 5.
+
+Fungsi tersebut akan mencari data dalam dataArray yang memiliki nilai diantara nilaiAwal dan nilaiAkhir, mengurutkan hasil pencarian dan menampilkannya ke layar/console.
+*/
+
 const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
 	// nilaiAwal must be less than nilaiAkhir
 	if (nilaiAwal >= nilaiAkhir) {
