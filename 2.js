@@ -24,8 +24,8 @@ const searchName = (keyword, limit, callback) => {
 	return callback(result, limit);
 };
 
-const callback = (result, limit) => {
+const sliceArray = (result, limit) => {
 	return result.slice(0, limit);
 };
 
-console.log(searchName("caro", 3, callback)); // ["Alexandra", "Amanda", "Angela"]
+console.log(searchName("an", 3, sliceArray)); // ["Alexandra", "Amanda", "Angela"]
