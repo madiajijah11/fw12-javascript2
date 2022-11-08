@@ -14,7 +14,7 @@ let data = {
 	website: "hildegard.org",
 };
 
-// changing the data using spread operator
+// copy data using spread operator and change the value of name and email, then create a new key called hobby with value
 let newData = {
 	...data,
 	name: "Dian Rahmadani",
