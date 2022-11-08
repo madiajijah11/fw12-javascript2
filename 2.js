@@ -1,3 +1,5 @@
+// Buatlah program searching nama yang dapat dibatasi jumlah outputnya yang menerapkan callback function
+
 const name = [
 	"Abigail",
 	"Alexandra",
@@ -17,12 +19,14 @@ const name = [
 	"Penelope",
 ];
 
-const searchName = (keyword, limit, name) => {
-	// filter name by keyword and limit, then return the result
-	const result = name.filter((item) => item.toLowerCase().includes(keyword));
+const searchName = (keyword, limit, callback) => {
+	const result = name.filter((names) => names.toLowerCase().includes(keyword));
+	return callback(result, limit);
+};
 
-	// if the result is more than the limit, then return the result with the limit
+
+const callback = (result, limit) => {
 	return result.slice(0, limit);
 };
 
-console.log(searchName("caro", 4, name));
+console.log(searchName("caro", 3, callback)); // ["Alexandra", "Amanda", "Angela"]
