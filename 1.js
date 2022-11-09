@@ -16,11 +16,11 @@ console.log(concat6); // output: HelloWorld
 // metode ini digunakan untuk mengecek apakah suatu nilai ada di dalam array atau tidak dan mengembalikan nilai index dari nilai tersebut jika ada dan mengembalikan nilai -1 jika tidak ada
 // bisa digunakan pada array dan string
 const indexOf1 = [1, 2, 3];
-const indexOf2 = "jakarta";
+const indexOf2 = "Fazztrack";
 console.log(indexOf1.indexOf(2)); // 1
 console.log(indexOf1.indexOf(4)); // -1
 console.log(indexOf2.indexOf("a")); // 1
-console.log(indexOf2.indexOf("z")); // -1
+console.log(indexOf2.indexOf("b")); // -1
 
 // 3.join() method
 // metode ini digunakan untuk menggabungkan semua elemen array menjadi sebuah string dan mengembalikan string tersebut
@@ -74,14 +74,14 @@ const sort1 = ["c", "a", "b"];
 console.log(sort1.sort()); // ['a', 'b', 'c']
 
 // 10.toString() method
-// metode ini digunakan untuk mengubah array menjadi string dan mengembalikan string tersebut
+// metode ini digunakan untuk mengubah object, date, array, number, function, dan boolean menjadi string dan mengembalikan string tersebut
 // bisa digunakan pada object, date, array, number, function, dan boolean
 // contoh object
 const toString1 = {
 	name: "John",
 	age: 30,
 };
-console.log(toString1.age.toString()); // [object Object]
+console.log(toString1.toString()); // [object Object]
 // contoh date
 const toString2 = new Date();
 console.log(toString2.toString()); // Mon Nov 07 2022 12:19:23 GMT+0800 (Singapore Standard Time)
