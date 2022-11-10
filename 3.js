@@ -22,7 +22,7 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
 		return "Jumlah angka dalam dataArray harus lebih dari 5";
 	}
 
-	// find the elements that are between nilaiAwal and nilaiAkhir and sort them
+	// sort the element and find the elements that are between nilaiAwal and nilaiAkhir
 	const result = dataArray
 		.sort((a, b) => a - b)
 		.filter((element) => element > nilaiAwal && element < nilaiAkhir);
