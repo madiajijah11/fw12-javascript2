@@ -43,6 +43,7 @@ console.log(pop1); // ['a', 'b']
 const push1 = ["a", "b", "c"];
 console.log(push1.push("d")); // 4
 console.log(push1); // ['a', 'b', 'c', 'd']
+console.log(push1.length) // 4
 
 // 6.reverse() method
 // metode ini digunakan untuk membalik urutan elemen array dan mengembalikan array yang sudah dibalik
