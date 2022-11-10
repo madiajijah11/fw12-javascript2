@@ -24,8 +24,8 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
 
 	// find the elements that are between nilaiAwal and nilaiAkhir and sort them
 	const result = dataArray
-		.filter((element) => element > nilaiAwal && element < nilaiAkhir)
-		.sort((a, b) => a - b);
+		.sort((a, b) => a - b)
+		.filter((element) => element > nilaiAwal && element < nilaiAkhir);
 
 	// if there is no element between nilaiAwal and nilaiAkhir, return "Nilai tidak ditemukan"
 	return result.length === 0 ? "Nilai tidak ditemukan" : result;
